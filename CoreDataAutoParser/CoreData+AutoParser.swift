@@ -10,30 +10,21 @@ import Foundation
 import CoreData
 
 extension NSManagedObject {
-    typealias InsertOrUpdateCallBack = (NSEntityDescription) -> NSManagedObject?
-/**
- *  moc:            The NSManagedObjectContext instance witch you want to creat entity in it
- *  entityName:     The Entity's Name
- *  info:           The data to set in the Entity, it should be a dictionary. we will access its data by use the Entiti'es properties' name as the key or the keyMap,s value of info
- *  checkCallBack:  This callback block is used to get the Entity instance by select or insert.
-**/
     
-    public class func CreateWithMoc(_ moc: NSManagedObjectContext, entityName: String, info: AnyObject, keyMap: [String: String]? = nil, insertOrUpdateCallBack: InsertOrUpdateCallBack) -> NSManagedObject? {
+    
+    func updateData(info: AnyObject) {
         var _optionPropertiesList = [String]();
-        guard let entity = NSEntityDescription.entity(forEntityName: entityName, in: moc), let obj = insertOrUpdateCallBack(entity) else {
-            return nil
-        }
         for property in entity.properties {
             let attributeDesc = entity.attributesByName[property.name]
             if entity.relationshipsByName[property.name] != nil {
                 _optionPropertiesList.append(property.name)
                 continue
             }
-            let key = keyMap?[property.name] ?? property.name
+            let key = property.name
             guard let v = info.value(forKey: key) else {
                 if !property.isOptional {
                     print("Cannot find value of key \(key) in params")
-                    return nil
+                    return
                 } else {
                     _optionPropertiesList.append(property.name)
                     continue
@@ -53,18 +44,17 @@ extension NSManagedObject {
                         }
                     }
                     if value != nil {
-                        obj.setValue(value, forKey: property.name)
+                        self.setValue(value, forKey: property.name)
                     } else if !property.isOptional {
                         print("Params value of key \(property.name)'s type is invalide, required is \(attrClsName), value is \(v)")
                     }
                 } else {
-                    obj.setValue(v, forKey: property.name)
+                    self.setValue(v, forKey: property.name)
                 }
             } else {
                 print("Cannot find value of key \(key) in params")
             }
         }
-        return obj;
     }
     
 /**

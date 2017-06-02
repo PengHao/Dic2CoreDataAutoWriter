@@ -17,6 +17,7 @@
 		4B8A6EF81DAA8CD600C4C180 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A6EEB1DAA8CD600C4C180 /* Entity.swift */; };
 		4B8A6EFA1DAA8CD600C4C180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A6EED1DAA8CD600C4C180 /* ViewController.swift */; };
 		4B8A6F001DAA8CE700C4C180 /* CoreDataAutoParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A6EFE1DAA8CE700C4C180 /* CoreDataAutoParserTests.swift */; };
+		4B920CCC1EE1800300A6E507 /* EntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B920CCB1EE1800300A6E507 /* EntityProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4B8A6EEB1DAA8CD600C4C180 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		4B8A6EED1DAA8CD600C4C180 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B8A6EFE1DAA8CE700C4C180 /* CoreDataAutoParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataAutoParserTests.swift; sourceTree = "<group>"; };
+		4B920CCB1EE1800300A6E507 /* EntityProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityProtocol.swift; sourceTree = "<group>"; };
 		4BA7AE211D43BABB00E4EBB3 /* CoreDataAutoParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataAutoParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA7AE381D43BABB00E4EBB3 /* CoreDataAutoParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataAutoParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +76,7 @@
 				4B8A6EEA1DAA8CD600C4C180 /* Entity+CoreDataProperties.swift */,
 				4B8A6EEB1DAA8CD600C4C180 /* Entity.swift */,
 				4B8A6EED1DAA8CD600C4C180 /* ViewController.swift */,
+				4B920CCB1EE1800300A6E507 /* EntityProtocol.swift */,
 			);
 			path = CoreDataAutoParser;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				4B8A6EFA1DAA8CD600C4C180 /* ViewController.swift in Sources */,
 				4B8A6EF51DAA8CD600C4C180 /* CoreData+AutoParser.swift in Sources */,
+				4B920CCC1EE1800300A6E507 /* EntityProtocol.swift in Sources */,
 				4B8A6EF81DAA8CD600C4C180 /* Entity.swift in Sources */,
 				4B8A6EF11DAA8CD600C4C180 /* AppDelegate.swift in Sources */,
 				4B8A6EF71DAA8CD600C4C180 /* Entity+CoreDataProperties.swift in Sources */,
@@ -433,6 +437,7 @@
 			children = (
 				4B8A6EE91DAA8CD600C4C180 /* CoreDataAutoParser.xcdatamodel */,
 			);
+			currentVersion = 4B8A6EE91DAA8CD600C4C180 /* CoreDataAutoParser.xcdatamodel */;
 			path = CoreDataAutoParser.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class Entity: NSManagedObject {
+class Entity: NSManagedObject, EntityProtocol {
 
 // Insert code here to add functionality to your managed object subclass
 

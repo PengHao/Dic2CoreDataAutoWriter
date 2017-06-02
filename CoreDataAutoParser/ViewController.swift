@@ -37,56 +37,12 @@ class ViewController: UIViewController {
         //convert to NSDictionary
         let infoDic = NSDictionary(dictionary: info)
         
-        let entity = NSManagedObject.CreateWithMoc(context, entityName: "Entity", info: infoDic) { (description) -> NSManagedObject? in
-            //insert a new object, or fetch a valid object
-            let obj = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: self.context)
-            return obj
-        }
-        //print the entity
-        print("\(entity)")
+        let entity1 = Entity.insert(info: infoDic, context: context);
+        print("\(String(describing: entity1))")
         
-        //print the entities' encode dictionary
-        let en = entity?.enCode()
-        print("\(en)")
+        let en = entity1?.enCode()
+        print("\(String(describing: en))")
         
-        
-        
-        
-        let mapInfo = [
-            "key0" : 1,
-            "key1" : 1470391786.4013271,
-            "key2" : 12321312123.3211231312,
-            "key3" : 999.123,
-            "key4" : "1236",
-            "key5" : "12342141",
-            "key6" : "123789126651641293",
-            "key7" : "gdasd qweggdsa gdsa"
-            
-        ] as [String : Any]
-        
-        let keyMap = [
-            "mBool"     : "key0",
-            "mDate"     : "key1",
-            "mDouble"   : "key2",
-            "mFloat"    : "key3",
-            "mInt16"    : "key4",
-            "mInt32"    : "key5",
-            "mInt64"    : "key6",
-            "mString"   : "key7",
-            ]
-        //convert to NSDictionary
-        let mapInfoDic = NSDictionary(dictionary: mapInfo)
-        let mapEntity = NSManagedObject.CreateWithMoc(context, entityName: "Entity", info: mapInfoDic, keyMap: keyMap) { (description) -> NSManagedObject? in
-            let obj = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: self.context)
-            return obj
-        }
-        //print the entity
-        print("\(mapEntity)")
-        
-        //print the entities' encode dictionary
-        let mapEn = mapEntity?.enCode()
-        print("\(mapEn)")
     }
-
 }
 
