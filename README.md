@@ -1,8 +1,6 @@
 # CoreDataAutoParser
-Auto parser dictionary to CoreData's Entity instance &amp; Convert Entity to dictionary
+自动将对应的字典类型数据转化为CoreData的存储类型，entity需要实现EntityProtocol接口，然后直接调用insert方法既可以插入一个新的entity，也可以调用updateData方法直接更新数据
 
-This extension is used to initialize a Entity instance of CoreData, and set values.
+class Entity: NSManagedObject, EntityProtocol 
 
-By calling the function of CreateWithMoc with a dictionary witch has the same keys with the Entity. U can see examples in the ViewController.swift.
-
-This is for swift 2.3. the code for 3.0 is coming soon
+let entity1 = Entity.insert(info: infoDic, context: context);

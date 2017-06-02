@@ -24,6 +24,7 @@ extension EntityProtocol where Self : NSManagedObject {
         }
         let obj = NSEntityDescription.insertNewObject(forEntityName: className, into: context);
         obj.updateData(info: info);
+        
         return obj as? Self;
     }
 }

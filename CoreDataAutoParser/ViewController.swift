@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         let en = entity1?.enCode()
         print("\(String(describing: en))")
         
+        
+        
     }
 }
 
