@@ -12,7 +12,7 @@ import CoreData
 extension NSManagedObject {
     
     
-    func updateData(info: AnyObject) {
+    public func updateData(info: AnyObject) {
         var _optionPropertiesList = [String]();
         for property in entity.properties {
             let attributeDesc = entity.attributesByName[property.name]

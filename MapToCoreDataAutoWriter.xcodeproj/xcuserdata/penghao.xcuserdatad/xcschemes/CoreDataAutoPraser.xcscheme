@@ -5,21 +5,38 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
+               BuildableName = "MapToCoreDataAutoWriterDemo.app"
+               BlueprintName = "MapToCoreDataAutoWriterDemo"
+               ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BA7AE371D43BABB00E4EBB3"
-               BuildableName = "CoreDataAutoParserTests.xctest"
-               BlueprintName = "CoreDataAutoParserTests"
-               ReferencedContainer = "container:CoreDataAutoParser.xcodeproj">
+               BlueprintIdentifier = "4B3422F82005C836001041F9"
+               BuildableName = "MapToCoreDataAutoWriterTests.xctest"
+               BlueprintName = "MapToCoreDataAutoWriterTests"
+               ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -27,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
-            BuildableName = "CoreDataAutoParser.app"
-            BlueprintName = "CoreDataAutoParser"
-            ReferencedContainer = "container:CoreDataAutoParser.xcodeproj">
+            BuildableName = "MapToCoreDataAutoWriterDemo.app"
+            BlueprintName = "MapToCoreDataAutoWriterDemo"
+            ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -39,6 +56,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -50,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
-            BuildableName = "CoreDataAutoParser.app"
-            BlueprintName = "CoreDataAutoParser"
-            ReferencedContainer = "container:CoreDataAutoParser.xcodeproj">
+            BuildableName = "MapToCoreDataAutoWriterDemo.app"
+            BlueprintName = "MapToCoreDataAutoWriterDemo"
+            ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -64,15 +82,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
-            BuildableName = "CoreDataAutoParser.app"
-            BlueprintName = "CoreDataAutoParser"
-            ReferencedContainer = "container:CoreDataAutoParser.xcodeproj">
+            BuildableName = "MapToCoreDataAutoWriterDemo.app"
+            BlueprintName = "MapToCoreDataAutoWriterDemo"
+            ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
