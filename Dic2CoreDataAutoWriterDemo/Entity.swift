@@ -1,6 +1,6 @@
 //
 //  Entity.swift
-//  CoreDataAutoParser
+//  Dic2CoreDataAutoWriter
 //
 //  Created by 彭浩 on 16/7/23.
 //  Copyright © 2016年 wolfpeng. All rights reserved.

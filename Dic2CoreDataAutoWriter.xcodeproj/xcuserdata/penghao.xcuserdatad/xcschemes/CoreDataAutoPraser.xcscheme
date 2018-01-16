@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
+               BuildableName = "Dic2CoreDataAutoWriterDemo.app"
+               BlueprintName = "Dic2CoreDataAutoWriterDemo"
+               ReferencedContainer = "container:Dic2CoreDataAutoWriter.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -17,20 +33,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BA7AE371D43BABB00E4EBB3"
-               BuildableName = "CoreDataAutoParserTests.xctest"
-               BlueprintName = "CoreDataAutoParserTests"
-               ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B3422F82005C836001041F9"
                BuildableName = "MapToCoreDataAutoWriterTests.xctest"
                BlueprintName = "MapToCoreDataAutoWriterTests"
-               ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
+               ReferencedContainer = "container:Dic2CoreDataAutoWriter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -38,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
-            BuildableName = "MapToCoreDataAutoWriterDemo.app"
-            BlueprintName = "MapToCoreDataAutoWriterDemo"
-            ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
+            BuildableName = "Dic2CoreDataAutoWriterDemo.app"
+            BlueprintName = "Dic2CoreDataAutoWriterDemo"
+            ReferencedContainer = "container:Dic2CoreDataAutoWriter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -62,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
-            BuildableName = "MapToCoreDataAutoWriterDemo.app"
-            BlueprintName = "MapToCoreDataAutoWriterDemo"
-            ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
+            BuildableName = "Dic2CoreDataAutoWriterDemo.app"
+            BlueprintName = "Dic2CoreDataAutoWriterDemo"
+            ReferencedContainer = "container:Dic2CoreDataAutoWriter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,15 +82,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BA7AE201D43BABB00E4EBB3"
-            BuildableName = "MapToCoreDataAutoWriterDemo.app"
-            BlueprintName = "MapToCoreDataAutoWriterDemo"
-            ReferencedContainer = "container:MapToCoreDataAutoWriter.xcodeproj">
+            BuildableName = "Dic2CoreDataAutoWriterDemo.app"
+            BlueprintName = "Dic2CoreDataAutoWriterDemo"
+            ReferencedContainer = "container:Dic2CoreDataAutoWriter.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

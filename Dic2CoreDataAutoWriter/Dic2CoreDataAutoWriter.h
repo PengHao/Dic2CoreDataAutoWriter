@@ -1,6 +1,6 @@
 //
-//  MapToCoreDataAutoWriter.h
-//  MapToCoreDataAutoWriter
+//  Dic2CoreDataAutoWriter.h
+//  Dic2CoreDataAutoWriter
 //
 //  Created by peng hao on 2018/1/10.
 //  Copyright © 2018年 wolfpeng. All rights reserved.
