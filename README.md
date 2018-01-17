@@ -4,3 +4,13 @@
 class Entity: NSManagedObject, EntityProtocol 
 
 let entity1 = Entity.insert(info: infoDic, context: context);
+
+Podfile:
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform:ios, '8.0'
+use_frameworks!
+target 'Demo' do
+    pod 'Dic2CoreDataAutoWriter'
+end
+```
